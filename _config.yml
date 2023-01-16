@@ -69,7 +69,7 @@ twitter:
 facebook:
   username               : ""
   app_id                 :
-  publisher              : https://www.facebook.com/profile.php?id=100089615190942
+  publisher              : # https://www.facebook.com/profile.php?id=100089615190942
 og_image                 : # Open Graph/Twitter default site image
 
 # For specifying social profiles
