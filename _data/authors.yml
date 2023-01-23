@@ -1,6 +1,6 @@
 lsolesen:
   name: "Lars Olesen"
-  bio: "Mangeårig idrætshøjskolelærer og ketsjer-entusiast. Elsker at spille padel, men nyder også at spille badminton og andre ketsjerspil. Har for nylig opdaget både skumtennis og pickleball."
+  bio: "Rejseglad højskolelærer."
   avatar: "/assets/images/authors/larsolesen.jpg"
   featured: true
   links:
@@ -13,3 +13,23 @@ lsolesen:
     - label: "Køb mig en kaffe"
       icon: "fas fa-fw fa-mug-hot"
       url: "https://www.buymeacoffee.com/lsolesen"
+lily:
+  name: "Lily Olesen"
+  bio: "Rejseglad."
+  avatar: "/assets/images/authors/default-profile.png"
+  featured: true
+alva:
+  name: "Alva Olesen"
+  bio: "Rejseglad."
+  avatar: "/assets/images/authors/default-profile.png"
+  featured: true
+emmi:
+  name: "Emmi Olesen"
+  bio: "Rejseglad."
+  avatar: "/assets/images/authors/default-profile.png"
+  featured: true
+dina:
+  name: "Dina Olesen"
+  bio: "Rejseglad."
+  avatar: "/assets/images/authors/default-profile.png"
+  featured: true

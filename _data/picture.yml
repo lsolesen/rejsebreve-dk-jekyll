@@ -1,0 +1,5 @@
+presets:
+  thumbnail:
+    widths: [500]
+  gallery:
+    widths: [500, 800, 1000, 1600]

@@ -37,16 +37,22 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     preview_path: "{{permalink}}"
-#    view_filters:
-#      - label: "Jesper Emil Jakobsgaard"
-#        field: author
-#        pattern: "jesper.emil.jakobsgaard"
-#      - label: "Jakob Nielsson"
-#        field: author
-#        pattern: "jakob.nielsson"
-#      - label: "Martin Madsen"
-#        field: author
-#        pattern: "martin.madsen"
+    view_filters:
+      - label: "Emmi"
+        field: author
+        pattern: "emmi"
+      - label: "Alva"
+        field: author
+        pattern: "alva"
+      - label: "Lily"
+        field: author
+        pattern: "lily"
+      - label: "Lars"
+        field: author
+        pattern: "lsolesen"
+      - label: "Dina"
+        field: author
+        pattern: "dina"
     view_groups:
       - label: Year
         field: last_modified_at
