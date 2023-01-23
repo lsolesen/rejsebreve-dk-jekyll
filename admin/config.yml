@@ -236,10 +236,8 @@ collections:
         fields: # The fields for each document, usually in front matter
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
-          - {label: "Permalink", name: "permalink", widget: "string", required: false}
           - {label: "SEO Beskrivelse", name: "description", widget: "text",  required: false}
           - {label: "Excerpt", name: "excerpt", widget: "text",  required: false}
-          - {label: "Layout", name: "layout", widget: "select", options: ["splash"], default: "splash"}
           - label: Header
             name: header
             widget: object
@@ -266,7 +264,6 @@ collections:
                 fields:
                   - {label: "Provider", name: "provider", widget: "select", options: ["youtube", "google-drive"], default: "", required: false}
                   - {label: "ID", name: "id", widget: "string", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
           - label: Intro
             name: intro
             widget: list
@@ -274,6 +271,7 @@ collections:
             required: false
             fields:
               - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
           - label: Blog link
             name: blog_link
             widget: list
@@ -318,6 +316,7 @@ collections:
               - {label: "Image", name: "image_path", widget: "string", required: false}
               - {label: "Url", name: "url", widget: "string", required: false}
           - {label: "Last modified at", name: "last_modified_at", widget: "datetime", format: "YYYY-MM-DDThh:mm:ssZ", dateFormat: "DD-MM-YYYY", timeFormat: "HH:mm", required: false}
+          - {label: "Layout", name: "layout", widget: "select", options: ["splash"], default: "splash"}
   - label: "Navigation"
     name: "navigation"
     editor:
