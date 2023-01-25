@@ -29,24 +29,14 @@
     "unicode-encode": "^1.4"
   },
   "scripts": {
-    "test": "bundle exec mocha src/test/*.*",
     "start": "bundle exec jekyll server --port 8080 --incremental",
-    "lsi": "bundle exec jekyll server --port 8080 --incremental --lsi",
     "draft": "bundle exec jekyll server --port 8080 --incremental --drafts",
     "test:html": "bundle exec htmlproofer --only-4xx --assume-extension \".html\" --ignore-status-codes \"400,403,409,429\" --allow-hash-href --ignore-empty-alt --cache '{ \"timeframe\": { \"external\": \"7d\" } }' _site/",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify",
     "watch": "watchify src/js/app.bundle.js -o assets/js/bundle.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build": "bundle exec jekyll build",
+    "build:js": "npm run uglify",
     "uglify": "bundle exec uglifyjs assets/js/vendor/jquery/jquery-3.6.0.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.ba-throttle-debounce.js assets/js/plugins/smooth-scroll.js assets/js/plugins/gumshoe.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "add-banner": "node _scripts/banner.js",
-    "generate-image": "node _scripts/generate-image.js",
-    "og-image": "npm run generate-image -- type:og",
-    "og-images": "npm run generate-image -- type:og path:./_posts/",
-    "pinterest-image": "npm run generate-image -- type:pinterest",
-    "pinterest-images": "npm run generate-image -- type:pinterest path:./_posts/",
-    "instagram-image": "npm run generate-image -- type:instagram",
-    "instagram-images": "npm run generate-image -- type:instagram path:./_posts/",
-    "htmlproofer": "bundle exec htmlproofer _site --only-4xx true --ignore-status-codes \"400,403,409,429\" --ignore-empty-alt true --ignore-urls \"/bjsm.bmj.com/\" --cache '{ \"timeframe\": { \"external\": \"30d\" } }'"
+    "clean": "bundle exec jekyll clean"
   }
 }

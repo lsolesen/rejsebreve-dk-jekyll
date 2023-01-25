@@ -23,8 +23,6 @@ show_preview_links: true
 editor:
   preview: false
 
-publish_mode: editorial_workflow
-
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -109,6 +107,98 @@ collections:
           - {label: "Image", name: "image_path", widget: "string"}
           - {label: "Url", name: "url", widget: "string", required: false}
       - {label: "Last modified at", name: "last_modified_at", widget: "datetime", format: "YYYY-MM-DDThh:mm:ssZ", dateFormat: "DD-MM-YYYY", timeFormat: "HH:mm", required: false}
+  - label: "Front page"
+    name: "frontpage"
+    editor:
+      preview: false
+    files:
+      - label: "Forsiden"
+        name: "index"
+        file: "index.html"
+        fields: # The fields for each document, usually in front matter
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+          - {label: "SEO Beskrivelse", name: "description", widget: "text",  required: false}
+          - {label: "Excerpt", name: "excerpt", widget: "text",  required: false}
+          - label: Header
+            name: header
+            widget: object
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Image", name: "image", widget: "string", required: false}
+              - {label: "Overlay Image", name: "overlay_image", widget: "string", required: false}
+              - {label: "Teaser Image", name: "teaser", widget: "string", required: false}
+              - {label: "Caption", name: "caption", widget: "string", required: false}
+              - label: Actions
+                name: actions
+                widget: list
+                collapsed: true
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string", required: false}
+                  - {label: "Url", name: "url", widget: "string", required: false}
+              - label: Video
+                name: video
+                widget: object
+                collapsed: true
+                required: false
+                fields:
+                  - {label: "Provider", name: "provider", widget: "select", options: ["youtube", "google-drive"], default: "", required: false}
+                  - {label: "ID", name: "id", widget: "string", required: false}
+          - label: Intro
+            name: intro
+            widget: list
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: Blog link
+            name: blog_link
+            widget: list
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
+          - label: Feature row content rows
+            name: feature_row_content
+            widget: list
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Image", name: "image_path", widget: "string", required: false}
+              - {label: "Alt", name: "alt", widget: "string", required: false}
+              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
+              - {label: "Url", name: "url", widget: "string", required: false}
+              - {label: "Btn label", name: "btn_label", widget: "string", required: false}
+              - {label: "Btn class", name: "btn_class", widget: "select", options: ["", "btn--success", "btn--warning", "btn--danger", "btn--info"], default: "", required: false}
+          - label: Feature row
+            name: feature_row
+            widget: list
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Image", name: "image_path", widget: "string", required: false}
+              - {label: "Alt", name: "alt", widget: "string", required: false}
+              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
+              - {label: "Url", name: "url", widget: "string", required: false}
+              - {label: "Btn label", name: "btn_label", widget: "string", required: false}
+              - {label: "Btn class", name: "btn_class", widget: "select", options: ["", "btn--success", "btn--warning", "btn--danger", "btn--info"], default: "", required: false}
+          - label: Gallery
+            name: gallery
+            widget: list
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Alt", name: "alt", widget: "string", required: false}
+              - {label: "Image", name: "image_path", widget: "string", required: false}
+              - {label: "Url", name: "url", widget: "string", required: false}
+          - {label: "Last modified at", name: "last_modified_at", widget: "datetime", format: "YYYY-MM-DDThh:mm:ssZ", dateFormat: "DD-MM-YYYY", timeFormat: "HH:mm", required: false}
+          - {label: "Layout", name: "layout", widget: "select", options: ["splash"], default: "splash"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Sider" # Used in the UI
     label_singular: "Side"
@@ -225,98 +315,6 @@ collections:
           - {label: "Image", name: "image_path", widget: "string"}
           - {label: "Url", name: "url", widget: "string", required: false}
       - {label: "Last modified at", name: "last_modified_at", widget: "datetime", format: "YYYY-MM-DDThh:mm:ssZ", dateFormat: "DD-MM-YYYY", timeFormat: "HH:mm", required: false}
-  - label: "Front page"
-    name: "frontpage"
-    editor:
-      preview: false
-    files:
-      - label: "Forsiden"
-        name: "index"
-        file: "index.html"
-        fields: # The fields for each document, usually in front matter
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
-          - {label: "SEO Beskrivelse", name: "description", widget: "text",  required: false}
-          - {label: "Excerpt", name: "excerpt", widget: "text",  required: false}
-          - label: Header
-            name: header
-            widget: object
-            collapsed: true
-            required: false
-            fields:
-              - {label: "Image", name: "image", widget: "string", required: false}
-              - {label: "Overlay Image", name: "overlay_image", widget: "string", required: false}
-              - {label: "Teaser Image", name: "teaser", widget: "string", required: false}
-              - {label: "Caption", name: "caption", widget: "string", required: false}
-              - label: Actions
-                name: actions
-                widget: list
-                collapsed: true
-                required: false
-                fields:
-                  - {label: "Label", name: "label", widget: "string", required: false}
-                  - {label: "Url", name: "url", widget: "string", required: false}
-              - label: Video
-                name: video
-                widget: object
-                collapsed: true
-                required: false
-                fields:
-                  - {label: "Provider", name: "provider", widget: "select", options: ["youtube", "google-drive"], default: "", required: false}
-                  - {label: "ID", name: "id", widget: "string", required: false}
-          - label: Intro
-            name: intro
-            widget: list
-            collapsed: true
-            required: false
-            fields:
-              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - label: Blog link
-            name: blog_link
-            widget: list
-            collapsed: true
-            required: false
-            fields:
-              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
-          - label: Feature row content rows
-            name: feature_row_content
-            widget: list
-            collapsed: true
-            required: false
-            fields:
-              - {label: "Title", name: "title", widget: "string", required: false}
-              - {label: "Image", name: "image_path", widget: "string", required: false}
-              - {label: "Alt", name: "alt", widget: "string", required: false}
-              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
-              - {label: "Url", name: "url", widget: "string", required: false}
-              - {label: "Btn label", name: "btn_label", widget: "string", required: false}
-              - {label: "Btn class", name: "btn_class", widget: "select", options: ["", "btn--success", "btn--warning", "btn--danger", "btn--info"], default: "", required: false}
-          - label: Feature row
-            name: feature_row
-            widget: list
-            collapsed: true
-            required: false
-            fields:
-              - {label: "Title", name: "title", widget: "string", required: false}
-              - {label: "Image", name: "image_path", widget: "string", required: false}
-              - {label: "Alt", name: "alt", widget: "string", required: false}
-              - {label: "Exerpt", name: "excerpt", widget: "text", required: false}
-              - {label: "Url", name: "url", widget: "string", required: false}
-              - {label: "Btn label", name: "btn_label", widget: "string", required: false}
-              - {label: "Btn class", name: "btn_class", widget: "select", options: ["", "btn--success", "btn--warning", "btn--danger", "btn--info"], default: "", required: false}
-          - label: Gallery
-            name: gallery
-            widget: list
-            collapsed: true
-            required: false
-            fields:
-              - {label: "Title", name: "title", widget: "string", required: false}
-              - {label: "Alt", name: "alt", widget: "string", required: false}
-              - {label: "Image", name: "image_path", widget: "string", required: false}
-              - {label: "Url", name: "url", widget: "string", required: false}
-          - {label: "Last modified at", name: "last_modified_at", widget: "datetime", format: "YYYY-MM-DDThh:mm:ssZ", dateFormat: "DD-MM-YYYY", timeFormat: "HH:mm", required: false}
-          - {label: "Layout", name: "layout", widget: "select", options: ["splash"], default: "splash"}
   - label: "Navigation"
     name: "navigation"
     editor:
