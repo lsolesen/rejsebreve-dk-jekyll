@@ -7,18 +7,18 @@ seo_title: "Blog om rejse til Zambia og Eventure | Rejsebreve"
 classes: wide
 author_profile: true
 gallery:
-  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=78472
+  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=65735
     rel: sponsored nofollow noopener
-    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=78472
-    alt: Badmintonshoppen.dk
-  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=79690
+    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=65735
+    alt: Backpackerlife.dk
+  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=45001
     rel: sponsored nofollow noopener
-    image_path: https://www.padelshoppen.com/wp-content/uploads/2022/03/Padelshoppen-300-%C3%97-250.jpg
-    alt: Padel Specialist
-  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=98527
+    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=45001
+    alt: Rejsegear
+  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=57101
     rel: sponsored nofollow noopener
-    image_path: /assets/images/ad/cuera-padel.jpg
-    alt: Cuera Padel
+    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=57101
+    alt: Flypenge
 ---
 
 {% assign site_posts = site.posts | sort: "last_modified_at" | reverse %}

@@ -7,9 +7,6 @@ last_modified_at: 2023-01-25T04:47:22+01:00
 layout: single
 sitemap: false
 author_profile: true
-signup: false
 title: Rejsebreves nyhedsbrev
 ---
-H﻿vis du gerne vil følge med i vores rejse, så kan du skrive dig op på denne nyhedsbrevsliste.
-
-{% include lead-magnet.html id="lcpaptpcevw0banyu7v" %}
+Hvis du gerne vil følge med i vores rejse, så kan du skrive dig op på denne nyhedsbrevsliste.

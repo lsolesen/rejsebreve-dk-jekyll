@@ -7,6 +7,7 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 @import "two-columns";
+@import "signup";
 
 .author__name, .nav__title {
   margin-bottom: 0;

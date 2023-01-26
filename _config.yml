@@ -40,10 +40,10 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 signup:
-  enabled: false
-  provider: false # mailchimp # false
-  url:
-  recaptcha:
+  enabled: true
+  provider: 'mailchimp' # mailchimp # false
+  url: https://rejsebreve.us11.list-manage.com/subscribe/post?u=a1fe11897779dba3d88cf33e6&amp;id=448ceaf86a&amp;f_id=000f9fe0f0
+  recaptcha: b_a1fe11897779dba3d88cf33e6_448ceaf86a
 
 
 # reCaptcha

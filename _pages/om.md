@@ -7,6 +7,19 @@ breadcrumbs: true
 sitemap: false
 author_profile: true
 title: Om Rejsebreve formål og tilblivelse
+gallery:
+  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=65735
+    rel: sponsored nofollow noopener
+    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=65735
+    alt: Backpackerlife.dk
+  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=45001
+    rel: sponsored nofollow noopener
+    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=45001
+    alt: Rejsegear
+  - url: https://www.partner-ads.com/dk/klikbanner.php?partnerid=28187&bannerid=57101
+    rel: sponsored nofollow noopener
+    image_path: https://www.partner-ads.com/dk/visbanner.php?partnerid=28187&bannerid=57101
+    alt: Flypenge
 ---
 
 Rejsebreve er vores families beretning om vores rejse til Zambia som frivillige på Eventure Plot.
@@ -22,3 +35,7 @@ Rejsebreve er vores families beretning om vores rejse til Zambia som frivillige 
 ## Tal om Rejsebreve
 
 - Blogindlæg: {{ site.posts.size }}
+
+## Reklamelinks
+
+{% include gallery %}
