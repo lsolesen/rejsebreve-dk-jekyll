@@ -22,7 +22,7 @@
       <a href="{{ img.url | relative_url }}"
         {% if img.title %}title="{{ img.title }}"{% endif %}>
       {% unless img.image_path contains 'http' %}
-        {% picture thumbnail {{ img.image_path }} --alt "{{ img.alt | default: page.title }}" %}
+        {% picture thumbnail {{ img.image_path }} --alt {{ img.alt | default: page.title }} %}
       {% else %}
         <img src="{{ img.image_path | relative_url }}"
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
@@ -30,7 +30,7 @@
       </a>
     {% else %}
       {% unless img.image_path contains 'http' %}
-        {% picture thumbnail {{ img.image_path }} --alt "{{ img.alt | default: page.title }}" %}
+        {% picture thumbnail {{ img.image_path }} --alt {{ img.alt | default: page.title }} %}
       {% else %}
         <img src="{{ img.image_path | relative_url }}"
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
