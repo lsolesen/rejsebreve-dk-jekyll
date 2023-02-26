@@ -29,8 +29,8 @@
     "unicode-encode": "^1.4"
   },
   "scripts": {
-    "start": "bundle exec jekyll server --port 8080 --incremental",
-    "draft": "bundle exec jekyll server --port 8080 --incremental --drafts",
+    "start": "bundle exec jekyll server --port 4000 --incremental",
+    "draft": "bundle exec jekyll server --port 4000 --incremental --drafts",
     "test:html": "bundle exec htmlproofer --only-4xx --assume-extension \".html\" --ignore-status-codes \"400,403,409,429\" --allow-hash-href --ignore-empty-alt --cache '{ \"timeframe\": { \"external\": \"7d\" } }' _site/",
     "watch": "watchify src/js/app.bundle.js -o assets/js/bundle.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",

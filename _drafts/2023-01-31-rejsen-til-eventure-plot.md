@@ -3,7 +3,7 @@ title: Rejsen til Eventure Plot i Zambia
 excerpt: "Dina fortæller om en begivenhedsrig rejse til Eventure Plot i Zambia."
 author: dina
 header:
-  teaser: https://i.ytimg.com/vi/YqwTUE93C7M/default.jpg
+  teaser: /assets/images/blog/DSCF0329.JPG
 gallery:
   - url: /assets/images/blog/DSCF1370.JPG
     image_path: /assets/images/blog/DSCF1370.JPG
